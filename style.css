@@ -15,8 +15,6 @@ body {
   background-color:  #e2e8f0;
 }
 
-
-
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -99,37 +97,44 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1em;
 }
 
 .search-window{
-  background-color:lightgray;
-  width: 40vw;
-  border-radius: 2vw;
-  height: 10px;
-
+  background-color: #e2e8f0;
+  height: 1.5em;
+  width: 45vw;
+  border-radius: 5vw;
 }
 
 .avatar{
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
 
 .left-search{
   display: flex;
-  gap : 10px;
-
+  gap : 1em;
+  align-items: center;
 }
 
 .right-avatar{
   display: flex;
-  gap : 10px;
+  gap : 1.75em;
+  justify-content: center;
+  align-items: center;
+}
 
+.right-avatar h4{
+  font-size: larger;
 }
 
 .bottom{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
 }
 
 .big-avatar{
@@ -140,17 +145,27 @@ img{
 
 .right-buttons{
   display: flex;
-  justify-content: space-between;
+  gap:1.5em;
 }
 
 .left-avatar{
   display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight:900;
 }
+
+
 
 .button{
   background-color: #1992d4;
-  width: 40px;
-  border-radius: 10px;
+  width: fit-content;
+  padding: 0.5em 2em;
+  border-radius: 1.5em;
+  color: white;
+  font-weight: bold;
 }
 
 .right-container{
@@ -174,6 +189,13 @@ img{
   display: flex;
   flex-direction: column;
   border-left: 0.5em solid #f5b041;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover{
+  position: relative;
+  bottom: 2px;
+
 }
 
 .lower-container{
@@ -230,12 +252,22 @@ img{
   flex: 1;
 }
 
+.quote:last-child{
+  border-bottom-width: 0px;
+}
+
+.head-trend{
+  margin-top: 0.67em;
+}
+
 .trending{
   display: flex;
   flex-direction: column;
-  gap : 0.5em;
+  gap : 1em;
   background-color: white;
-  padding: 0.75em;
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
 }
 
 .trending img{
